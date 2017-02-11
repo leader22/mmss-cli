@@ -26,7 +26,7 @@ Usage: mmss-cli --input [path/to/playlist.txt] --output [path/to/music.json]
   - その他の形式だと、ファイル数が多い場合に書き出しに時間がかかりすぎてダメ・・？
 
 # music.json
-```json
+```js
 {
   artistA: {
     albumA: [song, song, ..., song],
@@ -36,7 +36,7 @@ Usage: mmss-cli --input [path/to/playlist.txt] --output [path/to/music.json]
 }
 ```
 
-```json
+```js
 const song = {
   name: '進水式',
   artist: 'KIRINJI',
