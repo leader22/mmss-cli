@@ -1,4 +1,4 @@
-const cli = require('./cli');
+const cli = require('./lib/cli');
 const argv = require('yargs')
   .usage('Usage: $0 --input [path/to/playlist.txt] --output [path/to/music.json]')
   .demandOption(['input'])
