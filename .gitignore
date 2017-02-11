@@ -3,4 +3,4 @@ yarn.lock
 node_modules
 
 playlist.txt
-output.json
+music.json
