@@ -1,6 +1,6 @@
 # mmss-cli
 
-My Mp3 Streaming Server Cli.
+My Mp3 Streaming Server CLI.
 
 # Why?
 
@@ -27,27 +27,26 @@ Usage: mmss-cli --input [path/to/playlist.txt] --output [path/to/music.json]
 
 # music.json
 ```js
-{
-  artistA: {
-    albumA: [song, song, ..., song],
-    albumB: [song, song, ..., song],
-  },
-  artistB: {},
-}
-```
+declare type MusicJSON = Artist[];
 
-```js
-const song = {
-  name: '進水式',
-  artist: 'KIRINJI',
-  album: '11',
-  duration: '280',
-  disc: '1',
-  discs: '1',
-  track: '1',
-  tracks: '11',
-  year: '2014',
-  path: 'KIRINJI/11/KIRINJI - 進水式.mp3',
-  albumArtist: 'KIRINJI'
+declare type Artist = {
+  name: string;
+  albums: Album[];
+};
+
+declare type Album = {
+  name: string;
+  year: string;
+  songs: Song[];
+};
+
+declare type Song = {
+  name: string;
+  artist: string;
+  album: string;
+  disc: string;
+  track: string;
+  duration: string;
+  path: string;
 };
 ```
