@@ -18,7 +18,8 @@ mmss-cli -i path/to/music.txt -o path/to/music.json
 # music.txt
 
 - iTunesを起動
-- 最近追加した項目を表示
+- ライブラリ > 曲を表示
+- 追加日で降順ソート
 - 「ファイル」 > 「ライブラリ」 > 「プレイリストをエクスポート」
   - エンコードは標準テキスト
 
