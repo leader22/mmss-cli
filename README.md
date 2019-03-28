@@ -12,18 +12,15 @@ My Mp3 Streaming Server CLI.
 # How to use
 
 ```
-Usage: mmss-cli --input [path/to/playlist.txt] --output [path/to/music.json]
-
-オプション:
-  -i, --input                                                           [必須]
-  -o, --output                                      [デフォルト: "./music.json"]
+mmss-cli -i path/to/music.txt -o path/to/music.json
 ```
 
-# playlist.txt
+# music.txt
 
 - iTunesを起動
-- 「ファイル」 > 「ライブラリ」 > 「プレイリストをエクスポート」 > テキストファイル
-  - その他の形式だと、ファイル数が多い場合に書き出しに時間がかかりすぎてダメ・・？
+- 最近追加した項目を表示
+- 「ファイル」 > 「ライブラリ」 > 「プレイリストをエクスポート」
+  - エンコードは標準テキスト
 
 # music.json
 ```js

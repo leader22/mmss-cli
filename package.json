@@ -9,8 +9,5 @@
   },
   "keywords": [],
   "author": "leader22",
-  "license": "MIT",
-  "dependencies": {
-    "yargs": "^6.6.0"
-  }
+  "license": "MIT"
 }
