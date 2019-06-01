@@ -9,6 +9,8 @@ if (artistName.length === 0) {
   throw new Error('Arg artistName is not defined!');
 }
 
+console.log('dryrun ?', isDryRun);
+
 const albums = fs.readdirSync(artistName);
 
 for (const albumName of albums) {
